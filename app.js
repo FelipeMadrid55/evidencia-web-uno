@@ -150,4 +150,31 @@ while (opcionPrincipal !== 3) {
                             alert("Error: La cantidad debe ser mayor a 0.");
                         }
                     }
+}
+
+// Combos Especiales
+            } else if (opcionArea === 3) {
+                let opcionCombo = 0;
+
+                // Productos y Cantidades
+                while (opcionCombo !== 4) {
+                    opcionCombo = mostrarMenuCombos();
+
+                    if (opcionCombo >= 1 && opcionCombo <= 3) {
+                        let cantidad = Number(prompt(
+                            "------ CINESTAR ------\n" + 
+                            "Ingrese la cantidad (debe ser mayor a 0):"));
+                        if (cantidad > 0) {
+                            if (opcionCombo === 1) {
+                                subtotalCliente += cantidad * 13500;
+                            } else if (opcionCombo === 2) {
+                                subtotalCliente += cantidad * 24000;
+                            } else if (opcionCombo === 3) {
+                                subtotalCliente += cantidad * 38000;
+                            }
+                            totalProductosVendidos += cantidad;
+                        } else {
+                            alert("Error: La cantidad debe ser mayor a 0.");
+                        }
+                    }
                 }
