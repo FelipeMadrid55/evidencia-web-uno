@@ -97,3 +97,31 @@ while (opcionPrincipal !== 3) {
         // Menú de Áreas de Venta
         while (opcionArea !== 4) {
             opcionArea = mostrarMenuAreas();
+
+            // Entradas del cine
+
+            if (opcionArea === 1) {
+                let opcionEntrada = 0;
+
+                // Productos y Cantidades
+                while (opcionEntrada !== 4) {
+                    opcionEntrada = mostrarMenuEntradas();
+
+                    if (opcionEntrada >= 1 && opcionEntrada <= 3) {
+                        let cantidad = Number(prompt(
+                            "------ CINESTAR ------\n" + 
+                            "Ingrese la cantidad (debe ser mayor a 0):"));
+                        if (cantidad > 0) {
+                            if (opcionEntrada === 1) {
+                                subtotalCliente += cantidad * 12000;
+                            } else if (opcionEntrada === 2) {
+                                subtotalCliente += cantidad * 16000;
+                            } else if (opcionEntrada === 3) {
+                                subtotalCliente += cantidad * 22000;
+                            }
+                            totalProductosVendidos += cantidad;
+                        } else {
+                            alert("Error: La cantidad debe ser mayor a 0.");
+                        }
+                    }
+                }
