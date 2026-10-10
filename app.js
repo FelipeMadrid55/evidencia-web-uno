@@ -125,3 +125,29 @@ while (opcionPrincipal !== 3) {
                         }
                     }
                 }
+// Confiteria y snacks
+            } else if (opcionArea === 2) {
+                let opcionSnack = 0;
+
+                // Productos y Cantidades
+                while (opcionSnack !== 4) {
+                    opcionSnack = mostrarMenuSnacks();
+
+                    if (opcionSnack >= 1 && opcionSnack <= 3) {
+                        let cantidad = Number(prompt(
+                            "------ CINESTAR ------\n" + 
+                            "Ingrese la cantidad (debe ser mayor a 0):"));
+                        if (cantidad > 0) {
+                            if (opcionSnack === 1) {
+                                subtotalCliente += cantidad * 10000;
+                            } else if (opcionSnack === 2) {
+                                subtotalCliente += cantidad * 6000;
+                            } else if (opcionSnack === 3) {
+                                subtotalCliente += cantidad * 8500;
+                            }
+                            totalProductosVendidos += cantidad;
+                        } else {
+                            alert("Error: La cantidad debe ser mayor a 0.");
+                        }
+                    }
+                }
