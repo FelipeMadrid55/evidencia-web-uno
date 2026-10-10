@@ -77,3 +77,8 @@ function calcularDescuento(subtotal) {
     }
     return descuento;
 }
+function gestionarDonacion() {
+    let deseaDonar = prompt(
+        "------ CINESTAR ------\n" + "¿Desea donar $2.000 para el fondo cinematográfico nacional? (s/n)") === "s";
+    return deseaDonar ? 2000 : 0;
+}
