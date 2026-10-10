@@ -82,3 +82,18 @@ function gestionarDonacion() {
         "------ CINESTAR ------\n" + "¿Desea donar $2.000 para el fondo cinematográfico nacional? (s/n)") === "s";
     return deseaDonar ? 2000 : 0;
 }
+// Programa principal
+
+let opcionPrincipal = 0;
+
+// Menú Principal
+while (opcionPrincipal !== 3) {
+    opcionPrincipal = mostrarMenuPrincipal();
+
+    if (opcionPrincipal === 1) {
+        let subtotalCliente = 0;
+        let opcionArea = 0;
+
+        // Menú de Áreas de Venta
+        while (opcionArea !== 4) {
+            opcionArea = mostrarMenuAreas();
