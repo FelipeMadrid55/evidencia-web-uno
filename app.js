@@ -177,4 +177,32 @@ while (opcionPrincipal !== 3) {
                             alert("Error: La cantidad debe ser mayor a 0.");
                         }
                     }
+}
+
+// Finalizar compra y facturar
+            } else if (opcionArea === 4) {
+                if (subtotalCliente === 0) {
+                    alert("El cliente no ha seleccionado ningún producto.");
+                    break;
                 }
+
+                let descuento = calcularDescuento(subtotalCliente);
+                let donacion = gestionarDonacion();
+                let totalPagar = subtotalCliente - descuento + donacion;
+
+                totalClientes++;
+                recaudadoTotal += totalPagar;
+
+                // Mostrar Factura en pantalla
+                alert(
+                    "=== FACTURA CINESTAR ===\n" +
+                    "Subtotal: $" + subtotalCliente + "\n" +
+                    "Descuento aplicado: -$" + descuento + "\n" +
+                    "Donación voluntaria: +$" + donacion + "\n" +
+                    "TOTAL A PAGAR: $" + totalPagar + "\n" +
+                    "Gracias por su compra. ¡Disfrute la función!"
+                );
+            }
+        }
+
+        
