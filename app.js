@@ -205,4 +205,18 @@ while (opcionPrincipal !== 3) {
             }
         }
 
-        
+// Balance de la jornada
+    } else if (opcionPrincipal === 2) {
+        let promedioGasto = totalClientes > 0 ? (recaudadoTotal / totalClientes) : 0;
+        alert(
+            "=== CINESTAR ===\n" +
+            "=== BALANCE GENERAL DE LA JORNADA ===" + "\n" +
+            "Total de clientes atendidos: " + totalClientes + "\n" +
+            "Total de dinero recaudado: $" + recaudadoTotal + "\n" +
+            "Total de entradas y productos vendidos: " + totalProductosVendidos + "\n" +
+            "Gasto promedio por cliente: $" + promedioGasto
+        );
+    }
+}
+
+alert("Sistema cerrado. ¡Hasta luego!");
