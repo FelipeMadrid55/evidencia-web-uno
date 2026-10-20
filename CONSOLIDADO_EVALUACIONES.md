@@ -37,7 +37,7 @@ Este documento contiene el informe detallado y justificado de la revisión prác
 | 15 | **1095801952** | John Hernandez | Ej. 3 (Pet Center) | [1095801952-john-hernandez](1095801952-john-hernandez/EVALUACION.md) | **4.2** | Aprobado |
 | 16 | **1214743083** | Brandon Gonzalez | Ej. 1 (CineStar) | [1214743083-Brandon-gonzalez](1214743083-Brandon-gonzalez/EVALUACION.md) | **4.0** | Aprobado |
 | 17 | **4903282** | Staly Gonzalez | Ej. 2 (Aventura Park) | [4903282-staly-gonzalez](4903282-staly-gonzalez/EVALUACION.md) | **5.0** | Aprobado |
-| 18 | **91506744** | Diego Sanabria | Ej. 3 (Pet Center) | [91506744-Diego-Sanabria](91506744-Diego-Sanabria/EVALUACION.md) | **3.5** | Reprobado |
+| 18 | **91506744** | Diego Sanabria | Ej. 3 (Pet Center) | [91506744-Diego-Sanabria](91506744-Diego-Sanabria/EVALUACION.md) | **3.5** | Aprobado |
 | 19 | **1003082810** | Alex Sanchez | Ej. 1 (CineStar) | [CC-1003082810-](CC-1003082810-/EVALUACION.md) | **4.0** | Aprobado |
 | 20 | **1001588913** | Juan de la Cruz | Ej. 3 (Pet Center) | [juanDelaCruz-1001588913](juanDelaCruz-1001588913/EVALUACION.md) | **3.7** | Aprobado |
 | 21 | **1007238587** | Mario Ospina | Ej. 1 (CineStar) | [mario-ospina](mario-ospina/EVALUACION.md) | **4.7** | Aprobado |
